@@ -43,7 +43,7 @@ class CustomUser(AbstractUser):
     GENDER = [("M", "Male"), ("F", "Female")]
     
     
-    username = None  # Removed username, using email instead
+    username = None
     email = models.EmailField(unique=True)
     user_type = models.CharField(default=1, choices=USER_TYPE, max_length=1)
     gender = models.CharField(max_length=1, choices=GENDER)
