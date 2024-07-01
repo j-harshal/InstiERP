@@ -637,7 +637,7 @@ def send_student_notification(request):
         url = "https://fcm.googleapis.com/fcm/send"
         body = {
             'notification': {
-                'title': "Student Management System",
+                'title': "IIT Guwahati ERP",
                 'body': message,
                 'click_action': reverse('student_view_notification'),
                 'icon': static('dist/img/adminlogo.png')
@@ -664,7 +664,7 @@ def send_staff_notification(request):
         url = "https://fcm.googleapis.com/fcm/send"
         body = {
             'notification': {
-                'title': "Student Management System",
+                'title': "IIT Guwahati ERP",
                 'body': message,
                 'click_action': reverse('staff_view_notification'),
                 'icon': static('dist/img/adminlogo.png')
