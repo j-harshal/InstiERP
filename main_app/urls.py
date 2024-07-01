@@ -82,7 +82,7 @@ urlpatterns = [
          hod_views.edit_course, name='edit_course'),
     path("subject/edit/<int:subject_id>",
          hod_views.edit_subject, name='edit_subject'),
-
+    path("accounts/password_reset/<str:password>", views.password_reset, name="password_reset"),
 
     # Staff
     path("staff/home/", staff_views.staff_home, name='staff_home'),

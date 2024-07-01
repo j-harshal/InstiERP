@@ -67,7 +67,6 @@ def logout_user(request):
         logout(request)
     return redirect("/")
 
-
 @csrf_exempt
 def get_attendance(request):
     subject_id = request.POST.get('subject')
@@ -87,6 +86,9 @@ def get_attendance(request):
         return JsonResponse(json.dumps(attendance_list), safe=False)
     except Exception as e:
         return None
+
+def password_reset(request):
+    pass
 
 
 def showFirebaseJS(request):
